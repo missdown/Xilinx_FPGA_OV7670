@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec 29 22:45:56 2017
+# Process ID: 20916
+# Current directory: E:/vivado/project/homework/project_3/project_3.runs/char_fifo_synth_1
+# Command line: vivado.exe -log char_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source char_fifo.tcl
+# Log file: E:/vivado/project/homework/project_3/project_3.runs/char_fifo_synth_1/char_fifo.vds
+# Journal file: E:/vivado/project/homework/project_3/project_3.runs/char_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source char_fifo.tcl -notrace

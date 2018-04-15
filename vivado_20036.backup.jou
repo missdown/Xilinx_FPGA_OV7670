@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec 29 22:07:52 2017
+# Process ID: 20036
+# Current directory: E:/vivado/project/homework/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18780 E:\vivado\project\homework\project_3\project_3.xpr
+# Log file: E:/vivado/project/homework/project_3/vivado.log
+# Journal file: E:/vivado/project/homework/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/project/homework/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/vivado/project/homework/sources_1/imports/project/source/lab7/resp_gen.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/reset_bridge.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/bt_uart.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/seg7decimal.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/debouncer.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/to_bcd.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/uart_baud_gen.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/uart_rx_ctl.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/uart_tx_ctl.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/cmd_parse.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/clk_gen.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/uart_tx.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/rst_gen.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/uart_rx.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/lb_ctl.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/clk_div.v E:/vivado/project/homework/sources_1/imports/project/source/lab7/meta_harden.v}
+update_compile_order -fileset sources_1
+add_files -norecurse E:/vivado/project/homework/sources_1/imports/project/turn_10d/turn_10d.srcs/sources_1/new/turn_10d.v
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci E:/vivado/project/homework/sources_1/ip/clk_core/clk_core.xci}
+export_ip_user_files -of_objects  [get_files  {E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci E:/vivado/project/homework/sources_1/ip/clk_core/clk_core.xci}] -lib_map_path [list {modelsim=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/modelsim} {questa=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/questa} {riviera=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/riviera} {activehdl=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse E:/vivado/project/homework/constrs_1/imports/xdc/bt_uart_EGo.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+set_property -dict [list CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Full_Threshold_Assert_Value {1023} CONFIG.Full_Threshold_Negate_Value {1022} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_ips char_fifo]
+generate_target all [get_files  E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci]
+catch { config_ip_cache -export [get_ips -all char_fifo] }
+export_ip_user_files -of_objects [get_files E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci]
+launch_runs -jobs 4 char_fifo_synth_1
+export_simulation -of_objects [get_files E:/vivado/project/homework/sources_1/ip/char_fifo/char_fifo.xci] -directory E:/vivado/project/homework/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado/project/homework/project_3/project_3.ip_user_files -ipstatic_source_dir E:/vivado/project/homework/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/modelsim} {questa=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/questa} {riviera=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/riviera} {activehdl=E:/vivado/project/homework/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+remove_files  -fileset constrs_1 E:/vivado/project/homework/constrs_1/imports/xdc/bt_uart_EGo.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_run synth_1 -name synth_1
+close_design
+close [ open E:/vivado/project/homework/project_3/project_3.srcs/sources_1/new/all_top.v w ]
+add_files E:/vivado/project/homework/project_3/project_3.srcs/sources_1/new/all_top.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/project/homework/project_3/project_3.runs/impl_1/top_flyinglogo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_run synth_1 -name synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top all_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Dec 23 18:15:23 2017
+# Process ID: 16172
+# Current directory: D:/EGO1_Student/OV7725_VGA/project_3/project_3.runs/cap_buffer_blk_mem_gen_0_0_synth_1
+# Command line: vivado.exe -log cap_buffer_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cap_buffer_blk_mem_gen_0_0.tcl
+# Log file: D:/EGO1_Student/OV7725_VGA/project_3/project_3.runs/cap_buffer_blk_mem_gen_0_0_synth_1/cap_buffer_blk_mem_gen_0_0.vds
+# Journal file: D:/EGO1_Student/OV7725_VGA/project_3/project_3.runs/cap_buffer_blk_mem_gen_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cap_buffer_blk_mem_gen_0_0.tcl -notrace

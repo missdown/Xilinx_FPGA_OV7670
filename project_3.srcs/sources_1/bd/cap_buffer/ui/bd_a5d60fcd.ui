@@ -1,0 +1,13 @@
+{
+   commentid: "",
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port BRAM_PORTA -pg 1 -y 50 -defaultsOSRD
+preplace port BRAM_PORTB -pg 1 -y 70 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace netloc BRAM_PORTB_1 1 0 1 -310J
+preplace netloc BRAM_PORTA_1 1 0 1 NJ
+levelinfo -pg 1 -330 50 160 -top -20 -bot 1060
+",
+}
+0
